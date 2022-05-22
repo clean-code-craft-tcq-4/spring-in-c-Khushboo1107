@@ -6,11 +6,8 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     s.average = 0;
     s.min = 0;
     s.max = 0;
-}
 
-int emailAlertCallCount = 0;
-int ledAlertCallCount = 0;
-float sum=0;
+    float sum=0;
 float a;
 int setlength = sizeof(numberset) / sizeof(numberset[0]);
 int l=compute_statistics.setlength;
@@ -30,9 +27,13 @@ for(int i = 0; i<compute_statistics.setlength; i++)
 if(l==0)
 {
     s.average=NAN;
+    s.min=NAN;
+    s.max=NAN
 }
 else
 {
     s.average = sum/l;
-    printf("(%f)",s.average);
+}
+
+return s;
 }

@@ -9,3 +9,11 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
+float sum=0;
+int a=compute_statistics.setlength;
+for(int i = 0; i<=compute_statistics.setlength; i++)
+{
+    sum += scanf("%f", compute_statistics.numberset[]);
+}
+s.average = sum/a;
+printf("%f",s.average);

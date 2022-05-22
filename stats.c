@@ -4,8 +4,8 @@
 struct Stats compute_statistics(const float* numberset, int setlength) {
     stat s;
     s.average = 0;
-    s.min = inf;
-    s.max = -inf;
+    s.min = INFINITY;
+    s.max = -INFINITY;
 
     float sum=0;
 float a;

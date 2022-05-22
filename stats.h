@@ -2,7 +2,7 @@
 struct Stats compute_statistics(const float* numberset, int setlength);
 
 
-struct Stats {
+typedef struct Stats {
   float average;
   float min;
   float max;

@@ -9,7 +9,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 
     float sum=0;
 float a;
-int setlength = sizeof(numberset) / sizeof(numberset[0]);
+setlength = sizeof(numberset) / sizeof(numberset[0]);
 int l=compute_statistics.setlength;
 for(int i = 0; i<compute_statistics.setlength; i++)
 {
